@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+import object_tools
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('object-tools/', object_tools.tools.urls)
 ]
